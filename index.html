@@ -38,7 +38,7 @@
         }
 
         header h1 {
-            font-size: 1.8em;
+            font-size: 1.5em;
             margin: 0;
         }
 
@@ -68,7 +68,7 @@
         }
 
         #inicio h1 {
-            font-size: 2em;
+            font-size: 1.8em;
             margin: 20px 0;
             color: #c2185b;
         }
@@ -124,6 +124,7 @@
         footer a {
             color: #fff;
             text-decoration: none;
+            word-wrap: break-word; /* Rompe el texto si es muy largo */
         }
 
         footer a:hover {
@@ -133,11 +134,11 @@
         /* Botón flotante */
         .floating-button {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 15px;
+            right: 15px;
             z-index: 1000;
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             background-image: url('telefono.png'); /* Ruta de la imagen */
             background-size: cover;
             background-repeat: no-repeat;
@@ -149,6 +150,33 @@
 
         .floating-button:hover {
             transform: scale(1.1);
+        }
+
+        /* Responsividad */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contact-info {
+                text-align: left;
+                margin-top: 10px;
+            }
+
+            #inicio p {
+                font-size: 1em;
+                max-width: 90%;
+            }
+
+            footer a {
+                font-size: 0.9em;
+            }
+
+            .floating-button {
+                width: 40px;
+                height: 40px;
+            }
         }
     </style>
 </head>
