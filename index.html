@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Empresa en Línea</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Estilo general */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fce4ec; /* Rosa muy claro */
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f48fb1; /* Rosa suave */
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+
+        #logo-ismerely {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #logo-ismerely h1 {
+            font-size: 3.5em;
+            color: #fff;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        #logo-ismerely img {
+            height: 8em; /* Imagen más pequeña */
+            width: auto;
+            background: none;
+            border: none;
+        }
+
+        .contact-info {
+            text-align: right;
+            font-size: 1.2em;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .contact-info i {
+            margin-right: 8px;
+        }
+
+        #inicio {
+            text-align: center;
+            padding: 80px 20px;
+            margin: 40px auto;
+            max-width: 900px;
+        }
+
+        #inicio h1 {
+            font-size: 3.5em;
+            color: #fff;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        #inicio p {
+            font-size: 1.3em;
+            color: #c2185b; /* Rosa más oscuro */
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        #inicio img {
+            max-width: 70%;
+            border: none;
+            box-shadow: none;
+        }
+
+        #quienes-somos {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff;
+            margin: 20px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        #quienes-somos.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #quienes-somos h2 {
+            font-size: 2.8em;
+            color: #f06292; /* Rosa más claro */
+            margin-bottom: 20px;
+        }
+
+        #quienes-somos p {
+            font-size: 1.2em;
+            color: #34495e;
+            line-height: 1.8;
+        }
+
+        .contact-footer {
+            background-color: #f48fb1; /* Rosa suave */
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .contact-footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .contact-footer a:hover {
+            color: #f8bbd0; /* Rosa claro */
+        }
+
+        /* Estilo del botón flotante */
+        .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            width: 60px;
+            height: 60px;
+            background-image: url('telefono.png'); /* Ruta de la imagen */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .floating-button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Elimina el subrayado y el color azul en los enlaces */
+        .contact-info a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header de la página -->
+    <header>
+        <div id="logo-ismerely">
+            <img src="ismerely.png" alt="Ismerely">
+            <h1>ISMERELY</h1>
+        </div>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i><a href="mailto:alexisgante77@gmail.com">Correo: alexisgante77@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i><a href="tel:+524421817519">Teléfono: 4421817519</a></p>
+        </div>
+    </header>
+
+    <!-- Sección de inicio -->
+    <div id="inicio">
+        <img src="ismerely.png" alt="Ismerely" />
+        <h1>¡Un Nuevo Camino hacia tu Bienestar!</h1>
+        <p>"Explora el poder de lo natural y construye una vida llena de salud, equilibrio y oportunidades."</p>
+    </div>
+
+    <!-- Sección sobre quiénes somos -->
+    <div id="quienes-somos">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Ismerely es una empresa mexicana con más de 10 años de experiencia en herbolaria y 2 años como multinivel. Nos dedicamos a ofrecer productos naturales y orgánicos que promueven la salud y el bienestar, combinando tradición y tecnología para brindarte lo mejor de la herbolaria mexicana.</p>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="contact-footer">
+        <p>Visita nuestra tienda oficial:</p>
+        <a href="https://ismerely.me/link/store/ALEXISGANTE77" target="_blank">https://ismerely.me/link/store/ALEXISGANTE77</a>
+    </footer>
+
+    <!-- Botón flotante -->
+    <div class="floating-button" onclick="window.location.href='https://wa.me/524421817519';"></div>
+
+    <script>
+        // Agregar o quitar la clase "visible" cada vez que se hace scroll
+        window.addEventListener('scroll', function() {
+            const section = document.getElementById('quienes-somos');
+            const rect = section.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                section.classList.add('visible');
+            } else {
+                section.classList.remove('visible');
+            }
+        });
+    </script>
+
+</body>
+</html>
